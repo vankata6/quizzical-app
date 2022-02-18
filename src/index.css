@@ -11,13 +11,26 @@ code {
     monospace;
 }
 
+.start-page {
+  padding: 220px 70px 7px 70px;
+}
+
 .header {
-  margin: 220 70 7 70;
   font-family: Karla;
   font-style: normal;
   font-weight: bold;
   font-size: 31.25px;
   line-height: 37px;
+  text-align: center;
+  color: #293264;
+}
+
+.start-header {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
   text-align: center;
   color: #293264;
 }
@@ -71,17 +84,22 @@ code {
 }
 
 .check-btn {
-  margin-left: 35%;
   margin-top: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 120px;
   height: 35px;
   font-family: Karla;
   font-style: normal;
   font-weight: 700;
-  font-size: 10.24px;
+  font-size: 16px;
   line-height: 12px;
   text-align: center;
   color: #F5F7FB;
   background-color: #4D5B9E;
   border-radius: 10px;
 }
+

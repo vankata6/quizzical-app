@@ -1,5 +1,6 @@
 import React from "react";
 import data from "./data";
+import Start from "./Start";
 import Question from "./Question";
 
 export default function App() {
@@ -14,8 +15,10 @@ export default function App() {
 
   return (
     <div>
-      {questionElements}
-      <button className="check-btn">Check Answers</button>
+      <Start/>
+      <button className="check-btn">Start quiz</button>
+      {/* {questionElements}
+      <button className="check-btn">Check Answers</button> */}
     </div>
   )
 }
