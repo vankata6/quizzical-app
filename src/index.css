@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Karla',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11,8 +11,67 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* 
+
 .question {
-  height: 80vh;
-  background-color: brown;
-} */
+  padding: 0 75px;
+}
+
+.question-text {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #293264;
+}
+
+.correct-answer-btn {
+  margin: 13px;
+  font-family: Karla;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10.24px;
+  line-height: 12px;
+  text-align: center;
+  color: #293264;
+  background-color: #D6DBF5;
+  width: 65.92px;
+  height: 20.65px;
+  border-radius: 5px;
+}
+
+.incorrect-answer-btn {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10.24px;
+  line-height: 12px;
+  text-align: center;
+  color: #293264;
+  background-color: #F5F7FB;
+  width: 65.92px;
+  height: 20.65px;
+  border-radius: 5px;
+}
+
+.underline {
+  margin-left: 0;
+  width: 80%;
+  border: 0.794239px solid #DBDEF0;
+}
+
+.check-btn {
+  margin-left: 35%;
+  margin-top: 20px;
+  width: 120px;
+  height: 35px;
+  font-family: Karla;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10.24px;
+  line-height: 12px;
+  text-align: center;
+  color: #F5F7FB;
+  background-color: #4D5B9E;
+  border-radius: 10px;
+}

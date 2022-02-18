@@ -3,7 +3,7 @@ import data from "./data";
 import Question from "./Question";
 
 export default function App() {
-  
+
   const questionElements = data.map(quiz => {
         return <Question 
                 question={quiz.question} 
@@ -14,8 +14,8 @@ export default function App() {
 
   return (
     <div>
-      <h1>Hello</h1>
       {questionElements}
+      <button className="check-btn">Check Answers</button>
     </div>
   )
 }
