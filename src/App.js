@@ -1,7 +1,7 @@
 import React from "react";
 import data from "./data";
-import Start from "./Start";
-import Question from "./Question";
+import Start from "./Components/Start";
+import Question from "./Components/Question";
 
 export default function App() {
 
