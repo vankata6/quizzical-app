@@ -4,8 +4,7 @@ save number of correct answers when check answers is clicked
 follow css styling from https://www.figma.com/file/E9S5iPcm10f0RIHK8mCqKL/Quizzical-App?node-id=0%3A1
 share work in github and discord
 
-//get data from the api dynamically
-//rearrange answers in correct order
 //highlight answers only when they are marked
+//rearrange answers in correct order
 //display answer page when check button is pushed with correct answers
 //return to play again when button is clicked

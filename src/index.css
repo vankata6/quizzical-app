@@ -48,22 +48,8 @@ code {
   color: #293264;
 }
 
-.correct-answer-btn {
-  margin: 13px;
-  font-family: Karla;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 10.24px;
-  line-height: 12px;
-  text-align: center;
-  color: #293264;
-  background-color: #D6DBF5;
-  width: 65.92px;
-  height: 20.65px;
-  border-radius: 5px;
-}
-
-.incorrect-answer-btn {
+.answer-btn {
+  margin-right: 13px;
   font-family: Karla;
   font-style: normal;
   font-weight: 600;
@@ -75,6 +61,14 @@ code {
   width: 65.92px;
   height: 20.65px;
   border-radius: 5px;
+}
+
+.answer-btn:focus {
+  background: #D6DBF5;
+}
+
+.selected-btn {
+  background: #D6DBF5;
 }
 
 .underline {
