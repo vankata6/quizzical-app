@@ -63,7 +63,7 @@ code {
   border-radius: 5px;
 }
 
-/* .marked-btn {
+.marked-btn {
   margin-right: 13px;
   font-family: Karla;
   font-style: normal;
@@ -76,10 +76,6 @@ code {
   width: 65.92px;
   height: 20.65px;
   border-radius: 5px;
-} */
-
-.selected-btn {
-  background: #D6DBF5;
 }
 
 .underline {

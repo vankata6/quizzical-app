@@ -6,5 +6,3 @@ share work in github and discord
 
 //highlight answers only when they are marked
 //rearrange answers in correct order
-//display answer page when check button is pushed with correct answers
-//return to play again when button is clicked
