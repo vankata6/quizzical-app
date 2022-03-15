@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Question from './Question';
+import { useNavigate } from "react-router-dom";
 
 export default function Quiz() {
 
   const [object, setObject] = useState({})
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch('https://opentdb.com/api.php?amount=5&category=9&difficulty=medium&type=boolean')
@@ -23,7 +25,10 @@ export default function Quiz() {
 return(
     <div>
         {questionElements}
-        <button className="check-btn">Check Answers</button>
+        <button 
+          className="check-btn"
+          onClick={() => navigate('/answers')} 
+        >Check Answers</button>
     </div>
 )
 }
