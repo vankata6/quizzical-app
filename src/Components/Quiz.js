@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Question from './Question';
 import { useNavigate } from "react-router-dom";
 
-export default function Quiz(props) {
+export default function Quiz() {
 
   const [object, setObject] = useState({})
   const [buttonText, setButtonText] = useState(false);
@@ -29,12 +29,9 @@ export default function Quiz(props) {
     if(count === 2) { start(); }
   })
 
-  function checkAnswers() {
+  function handleClick() {
     setButtonText(!buttonText)
-  }
-
-  function playAgain() {
-  setCount(count + 1)
+    setCount(count + 1)
   }
   
   return(
@@ -42,7 +39,7 @@ export default function Quiz(props) {
         {questionElements}
         <button 
           className="check-btn"
-          onClick={() => {checkAnswers(); playAgain()}}
+          onClick={handleClick}
         >{buttonText ? "Play Again" : "Check Answers"}</button>
     </div>
 )
