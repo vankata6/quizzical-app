@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Question from './Question';
 import { useNavigate } from "react-router-dom";
 
-export default function Quiz() {
+export default function Quiz(props) {
 
   const [object, setObject] = useState({})
   const [buttonText, setButtonText] = useState(false);
@@ -17,7 +17,7 @@ export default function Quiz() {
     key={quiz.question}
     />
   })
-  
+
   useEffect(() => {
     fetch('https://opentdb.com/api.php?amount=5&category=9&difficulty=medium&type=boolean')
     .then(res => res.json())

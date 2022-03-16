@@ -17,12 +17,12 @@ export default function Question(props) {
             <h3 className="question-text">{props.question}</h3>
             <button 
                 className={isLeftActive ? 'answer-btn' : 'marked-btn'}
-                onClick={(isRightActive) && handleLeftToggle}
-            >{props.correct_answer}</button> 
+                onClick={isRightActive ? handleLeftToggle : undefined}
+            >True</button> 
             <button 
                 className={isRightActive ? 'answer-btn' : 'marked-btn'}
-                onClick={(isLeftActive) && handleRightToggle}
-            >{props.incorrect_answers}</button> 
+                onClick={isLeftActive ? handleRightToggle : undefined}
+            >False</button> 
             <hr className="underline"/>
         </div>
     )
