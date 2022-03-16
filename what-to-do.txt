@@ -4,9 +4,7 @@ save number of correct answers when check answers is clicked
 follow css styling from https://www.figma.com/file/E9S5iPcm10f0RIHK8mCqKL/Quizzical-App?node-id=0%3A1
 share work in github and discord
 
-//shouldn't highlight both answers at the same time
-//save questions and marked answers when checking for answers
-//check if answers are correct in answers.js
-//make evaluation of correct answers
 //rearrange answers in correct order 1.true 2.false
+//save questions and marked answers when checking for answers
+//make evaluation of correct answers
 
