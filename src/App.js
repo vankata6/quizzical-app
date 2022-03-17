@@ -9,15 +9,16 @@ export default function App() {
 
   const [question, setQuestion] = useState({})
 
-  const questionElements = question.results?.map(quiz => {
+  const questionElements = question.results?.map((quiz, index) => {
     return <Question 
+      key={index}
       question={quiz.question} 
-      key={quiz.question}
     />
   })
 
   const correctAnswers = question.results?.map(quiz => {
     return <Quiz
+    key={quiz.question}
     correct_answer={quiz.correct_answer}
     incorrect_answers={quiz.incorrect_answers}
     />
