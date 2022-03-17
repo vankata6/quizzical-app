@@ -1,46 +1,12 @@
-import React, { useState, useEffect } from "react";
-import Question from './Question';
-import { useNavigate } from "react-router-dom";
+import React from "react";
 
-export default function Quiz() {
+export default function Quiz(props) {
 
-  const [object, setObject] = useState({})
-  const [buttonText, setButtonText] = useState(false);
-  const [count, setCount] = useState(0);
-  const navigate = useNavigate();
-  
-  const questionElements = object.results?.map(quiz => {
-    return <Question 
-    question={quiz.question} 
-    correct_answer={quiz.correct_answer} 
-    incorrect_answers={quiz.incorrect_answers}
-    key={quiz.question}
-    />
-  })
-
-  useEffect(() => {
-    fetch('https://opentdb.com/api.php?amount=5&category=9&difficulty=medium&type=boolean')
-    .then(res => res.json())
-    .then(data => setObject(data))
-  }, [])
-  
-  useEffect(() => {
-    const start = () => navigate('/'); 
-    if(count === 2) { start(); }
-  })
-
-  function handleClick() {
-    setButtonText(!buttonText)
-    setCount(count + 1)
-  }
+  console.log(props.correct_answer)
   
   return(
     <div>
-        {questionElements}
-        <button 
-          className="check-btn"
-          onClick={handleClick}
-        >{buttonText ? "Play Again" : "Check Answers"}</button>
+      
     </div>
-)
+  )
 }
